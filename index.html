@@ -10,30 +10,37 @@
   <h1>Добавить товар</h1>
   <form action="https://jsonplaceholder.typicode.com/posts"
         method="POST">
-    <table border="0" cellpadding="10" style="border: 1px solid black;">
-      <tr>
-        <td>
+        <fieldset style="width: 350px;">
           Наименование<br>
             <input type="text" name="name"><br>
+            <label for="name"></label>
           Категория<br> 
             <input type="text" name="category"><br>
+            <label for="category"></label>
           Единицы измерения<br>
             <input type="text" name="units"><br>
+            <label for="units"></label>
           Дисконт<br>
             <input type="checkbox" name="discount">
-            <input type="text" name="units" disabled><br>
+            <label for="discount"></label>
+            <input type="text" name="units_1" disabled><br>
+            <label for="units_1"></label>
           Описание<br>
             <textarea name="description" cols="15" rows="2"></textarea><br>
           Количество<br>
             <input type="text" name="count"><br>
+            <label for="count"></label>
           Цена<br>
             <input type="text" name="price"><br>
+            <label for="price"></label>
           <br><br>
           <input type="file" name="image">
-  </form>
-    </table>
+          <label for="image"></label>
+        </fieldset>
+  
   <br>
   <button type="submit">Добавить товар</button>
+</form>
 
 </form>
 </body>
