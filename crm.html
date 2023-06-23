@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lato:wght@300;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>CRM-ShopOnline</title>
+</head>
+<body>
+  <div class="container">
+  <div class="product">
+  <h1 class="product__title">Добавить товар</h1>
+  <form action="https://jsonplaceholder.typicode.com/posts"
+        method="POST">
+        <fieldset class="product__fieldset" style="width: 580px;">
+          <p class="product__p-text">Наименование</p>
+          <input class="product__input" type="text" name="name"><br>
+          <label class="product__text" for="name"></label>
+            <p class="product__p-text">Категория</p>
+            <input class="product__input" type="text" name="category"><br>
+            <label class="product__text" for="category"></label>
+            <p class="product__p-text">Единицы измерения</p>
+            <input class="product__input" type="text" name="units"><br>
+            <label class="product__text" for="units"></label>
+            <p class="product__p-text">Дисконт</p>
+            <div class="desc">
+            <input class="product__checkbox-input" type="checkbox" name="discount">
+            <label for="discount"></label>
+            <input class="product__input-desc" type="text" name="units_1" disabled><br>
+            </div>
+            <label  for="units_1"></label>
+            <p class="product__p-text">Описание</p>
+            <textarea class="product__textarea" name="description" cols="15" rows="2"></textarea><br>
+            <p class="product__p-text">Количество</p>
+            <input class="product__input" type="text" name="count"><br>
+            <label class="product__text" for="count"></label> 
+            <p class="product__p-text">Цена</p>
+            <input class="product__input" type="text" name="price"><br>
+            <label for="price"></label>
+        </fieldset>
+        <div class="add-item">
+          <button class="product__button" type="submit">Добавить товар</button>
+        </div> 
+        </div>
+
+</form>
+</body>
+</div>
+</div>
+</html>
