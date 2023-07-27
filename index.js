@@ -1,0 +1,10 @@
+const title = 'Холодильник Candy';
+console.log('title: ', title);
+  
+const count = 5;
+  
+const category = 'Холодильники и морозильные камеры';
+  
+const price = 29990;
+
+console.log('Общая сумма товара:', count * price);

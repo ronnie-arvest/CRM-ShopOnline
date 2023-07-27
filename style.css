@@ -153,6 +153,9 @@ iframe {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  align-self: flex-start;
+  margin: 0;
+  margin-right: 10px;
 }
 
 .product__checkbox-input:before {
