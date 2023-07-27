@@ -1,5 +1,5 @@
 const title = 'Холодильник Candy';
-console.log('title: ', title);
+console.log('Наименование товара: ', title);
   
 const count = 5;
   
