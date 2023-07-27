@@ -1,3 +1,5 @@
+'use strict';
+
 const title = 'Холодильник Candy';
 console.log('Наименование товара: ', title);
   
