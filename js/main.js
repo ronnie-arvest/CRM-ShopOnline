@@ -9,13 +9,13 @@ function createRow(object) {
           cell.textContent = object[key];
           row.appendChild(cell);
       }
-  }
+  };
 
   return row;
 }
 
 function renderGoods(goodsArray) {
-  const table = document.getElementById('goodsTable'); // пример элемента
+  const table = document.getElementById('goodsTable');
 
   const rows = goodsArray.map(object => createRow(object));
 
