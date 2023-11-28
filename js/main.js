@@ -80,16 +80,40 @@ const goodsArray = [
     "category": "Техника для дома",
     "units": "шт",
     "count": 5,
-    "price": '100',
+    "price": 100,
   },
   {
     "id": 937295527,
-    "title": "Настольная игра На 4-х ногах",
+    "title": `Настольная игра "На 4-х ногах"`,
     "category": "Настольные игры",
     "units": "шт",
     "count": 12,
-    "price": '14',
+    "price": 14,
   },
+  {
+    "id": 937295527,
+    "title": `Настольная игра "Манчкин"`,
+    "category": "Настольные игры",
+    "units": "шт",
+    "count": 10,
+    "price": 12,
+  },
+  {
+    "id": 296378448,
+    "title": `Радиоуправляемый автомобиль Cheetan`,
+    "category": "Игрушки",
+    "units": "шт",
+    "count": 1,
+    "price": 320,
+  },
+  {
+    "id": 246258248,
+    "title": "Витая пара PROConnect 01-0043-3-25",
+    "category": "Кабели",
+    "units": "шт",
+    "count": 420,
+    "price": 3,
+  }
 ];
 
 const goodsArrayWithTotal = goodsArray.map(goodsItem => {
