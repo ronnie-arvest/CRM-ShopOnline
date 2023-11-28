@@ -17,7 +17,7 @@ function createRow(object) {
 function renderGoods(goodsArray) {
   const table = document.getElementById('goodsTable');
 
-  const rows = goodsArray.map(object => createRow(object));
+  const rows = goodsArray.map(createRow);
 
   rows.forEach(row => {
       table.appendChild(row);
