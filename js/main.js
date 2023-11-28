@@ -2,14 +2,14 @@
 
 function createRow(object) {
   const row = document.createElement('tr');
-  row.classList.add('main-content__trr');
+  row.classList.add('main-content__trr'); // Добавляем класс к строке
 
   for (const key in object) {
     if (object.hasOwnProperty(key)) {
       const cell = document.createElement('td');
-      cell.classList.add('main-content__tdd')
+      cell.classList.add('main-content__tdd');
       cell.textContent = object[key];
-      row.appendChild(cell);
+      row.append(cell);
     }
   }
 
@@ -17,7 +17,7 @@ function createRow(object) {
 }
 
 function renderGoods(goodsArray) {
-  let table = document.querySelector('.main-content__table-list');
+  let table = document.querySelector('.main-content__tbody');
 
   const rows = goodsArray.map(createRow);
 
@@ -34,7 +34,6 @@ const goodsArray = [
     "units": "шт",
     "count": 5,
     "price": '$100',
-    "total": '$500',
   },
   {
     "id": 937295527,
@@ -43,7 +42,6 @@ const goodsArray = [
     "units": "шт",
     "count": 12,
     "price": '$14',
-    "total": '$168',
   },
 ];
 
