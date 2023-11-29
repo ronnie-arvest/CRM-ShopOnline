@@ -83,7 +83,7 @@ const goodsArray = [
     "price": 100,
   },
   {
-    "id": 937295527,
+    "id": 937295558,
     "title": `Настольная игра "На 4-х ногах"`,
     "category": "Настольные игры",
     "units": "шт",
@@ -107,13 +107,13 @@ const goodsArray = [
     "price": 320,
   },
   {
-    "id": 246258248,
+    "id": 246258255,
     "title": "Витая пара PROConnect 01-0043-3-25",
     "category": "Кабели",
     "units": "шт",
     "count": 420,
     "price": 3,
-  }
+  },
 ];
 
 const goodsArrayWithTotal = goodsArray.map(goodsItem => {

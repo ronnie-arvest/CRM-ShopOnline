@@ -29,12 +29,26 @@ delBtn.addEventListener('click', () => {
     tableRow.style.display = 'none';
   });
 
+// tBody.addEventListener('click', e => {
+//   const target = e.target;
+//   if (target.closest('.main-content__tdd-delete')) {
+//     const rowToDelete = target.closest('.main-content__trr');
+//     rowToDelete.remove();
+//   };
+// });
+
 tBody.addEventListener('click', e => {
   const target = e.target;
   if (target.closest('.main-content__tdd-delete')) {
     const rowToDelete = target.closest('.main-content__trr');
+    const idToDelete = parseInt(rowToDelete.querySelector('td:first-child').textContent, 10);
+
+    const indexToDelete = goodsArray.findIndex(item => item.id === idToDelete);
+
+    goodsArray.splice(indexToDelete, 1);
+
     rowToDelete.remove();
-  };
+  }
 });
 
 }
